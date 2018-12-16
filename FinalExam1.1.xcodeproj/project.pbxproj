@@ -12,6 +12,7 @@
 		8A92494E21C17F8000E3552A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A92494C21C17F8000E3552A /* Main.storyboard */; };
 		8A92495021C17F8100E3552A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A92494F21C17F8100E3552A /* Assets.xcassets */; };
 		8A92495321C17F8100E3552A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A92495121C17F8100E3552A /* LaunchScreen.storyboard */; };
+		8AF540E821C1889E0022B072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF540E721C1889E0022B072 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8A92494F21C17F8100E3552A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A92495221C17F8100E3552A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A92495421C17F8100E3552A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF540E721C1889E0022B072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Elements/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		8A92494721C17F8000E3552A /* FinalExam1.1 */ = {
 			isa = PBXGroup;
 			children = (
+				8AF540E721C1889E0022B072 /* Assets.xcassets */,
 				8A92494821C17F8000E3552A /* AppDelegate.swift */,
 				8A92494A21C17F8000E3552A /* ViewController.swift */,
 				8A92494C21C17F8000E3552A /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			files = (
 				8A92495321C17F8100E3552A /* LaunchScreen.storyboard in Resources */,
 				8A92495021C17F8100E3552A /* Assets.xcassets in Resources */,
+				8AF540E821C1889E0022B072 /* Assets.xcassets in Resources */,
 				8A92494E21C17F8000E3552A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,81 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalExam1_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jWk-q7-iig">
+                                <rect key="frame" x="20" y="20" width="335" height="206"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Grades Below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RX-M9-RfK">
+                                        <rect key="frame" x="20" y="0.0" width="295" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.99607843139999996" green="0.76862745099999996" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PMe-Xj-qZj">
+                                        <rect key="frame" x="20" y="38" width="295" height="34"/>
+                                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEQ-ZP-kAr">
+                                        <rect key="frame" x="20" y="80" width="295" height="34"/>
+                                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fnv-ia-YVX">
+                                        <rect key="frame" x="20" y="122" width="295" height="34"/>
+                                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vn-Fu-TAr">
+                                        <rect key="frame" x="20" y="164" width="295" height="42"/>
+                                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Calculate Grade Average">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.4823529412" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zos-VJ-FGC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3vn-Fu-TAr" secondAttribute="trailing" constant="20" id="08O-aG-J9D"/>
+                                    <constraint firstItem="PMe-Xj-qZj" firstAttribute="leading" secondItem="jWk-q7-iig" secondAttribute="leading" constant="20" id="56E-fI-e0Q"/>
+                                    <constraint firstItem="5RX-M9-RfK" firstAttribute="leading" secondItem="jWk-q7-iig" secondAttribute="leading" constant="20" id="B1i-uv-VoV"/>
+                                    <constraint firstAttribute="trailing" secondItem="PMe-Xj-qZj" secondAttribute="trailing" constant="20" id="EGb-7f-7kp"/>
+                                    <constraint firstAttribute="trailing" secondItem="vEQ-ZP-kAr" secondAttribute="trailing" constant="20" id="PJG-Ax-S39"/>
+                                    <constraint firstItem="Fnv-ia-YVX" firstAttribute="leading" secondItem="jWk-q7-iig" secondAttribute="leading" constant="20" id="SCI-we-4i0"/>
+                                    <constraint firstAttribute="trailing" secondItem="5RX-M9-RfK" secondAttribute="trailing" constant="20" id="bEP-Kt-G4b"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fnv-ia-YVX" secondAttribute="trailing" constant="20" id="cqD-H0-Jim"/>
+                                    <constraint firstItem="3vn-Fu-TAr" firstAttribute="leading" secondItem="jWk-q7-iig" secondAttribute="leading" constant="20" id="lAG-Nj-PD1"/>
+                                    <constraint firstItem="vEQ-ZP-kAr" firstAttribute="leading" secondItem="jWk-q7-iig" secondAttribute="leading" constant="20" id="yoF-KU-b99"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jWk-q7-iig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Vv-vG-Y5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jWk-q7-iig" secondAttribute="trailing" constant="20" id="QMg-Pt-xbA"/>
+                            <constraint firstItem="jWk-q7-iig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iAw-dP-9Wr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="gradeFieldOne" destination="PMe-Xj-qZj" id="Na9-Hb-NIg"/>
+                        <outlet property="gradeFieldThree" destination="Fnv-ia-YVX" id="mc9-jK-Jcf"/>
+                        <outlet property="gradeFieldTwo" destination="vEQ-ZP-kAr" id="Y2X-KP-XLe"/>
+                        <outlet property="resultsLabel" destination="5RX-M9-RfK" id="Ag0-JZ-bBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
